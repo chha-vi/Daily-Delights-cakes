@@ -1,0 +1,65 @@
+.roboto-mono-<uniquifier>{
+    font-family:"Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    }
+   *{
+        margin: 0;
+        padding: 0;
+       }
+       html{
+        font-size: 12pt;
+        color:rgb(62, 132, 193);
+        text-align: center;
+       }
+    body{
+    min-height:100vh;
+    background-image: url('cakes/big.png');
+    background-size:cover;
+    background-position: 80% center;
+    overflow: hidden;
+    }
+    .wrapper{
+    box-sizing: border-box;
+    background-color: pink;
+    height:100vh;
+    width: max(40%,600px);
+    padding:10px;
+    border-radius: 0 20px 20px 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    }
+    h1{
+    font-size:3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    }
+    form {
+    width:min(400px,100%);
+    margin-top: 20px;
+   margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    column-gap: 80px;
+    row-gap: 40px;
+    }
+   form > div{
+    width:10px;
+    display: flex;
+    justify-content: center;
+    }
+    form label{
+    flex-shrink: 0;
+    height: 50px;
+    width: 50px;
+    background-color: brown;
+    }
+    form input{
+    flex-grow: 1;
+    min-width: 0;
+
+    }

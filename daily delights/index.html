@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        }
+        body {
+         background-image: url('cakes/cherry.png'); */
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        min-height: 100vh; */
+}
+        
+
+        nav {
+          display: flex;
+         justify-content: space-around;
+         align-items: center;
+         height: 90px;
+         background-color: rgb(207, 85, 87);
+            color: rgb(255, 166, 166);
+}
+     nav ul{
+      display:flex ;
+      justify-content: center;
+      align-items: center;
+      /* padding:16 32px ; */
+     }
+     .logobar {
+      text-decoration: none;
+       display: flexbox;
+       justify-content: space-around;
+       align-items: center;
+       gap:30px;
+       transition: transform 0.2s ease, color 0.1s ease;
+     }
+     .logobar:hover{
+      color: white;
+     transform: scale(1.0);
+     }
+     nav ul li{
+        list-style: none;
+        margin:  23px;
+       }
+        .logo {
+        height: 40px;
+        width: auto;
+         object-fit: contain;
+         border-radius: 34px;
+         
+       }
+        
+     
+     nav ul li a {
+      text-decoration: none;
+       color:  rgb(255, 129, 145);
+       display: inline-block;
+       transition: transform 0.2s ease, color 0.1s ease;
+     }
+     nav ul li a:hover {
+     color: white;
+     transform: scale(1.1);
+     }
+     .left{
+        font-size: 2rm ;
+     }
+     .firstsection{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin : 80px 0;
+     }
+     .firstsection >div{
+        width:30%;
+     }
+     .leftsection{
+        background-color: rgb(245, 245, 220);
+        color : rgb(255, 245, 205);
+        font-size: 0.80rem;
+     }
+     .leftsection:hover{
+      font-size: 0.8rem;
+     }
+     /* .rightsection img{ 
+        border-radius: 20px;
+        width: 80%;
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+     }*/
+
+     img:hover {
+      box-shadow: 0 8px 20px rgba(219, 103, 122, 0.601);
+       transform: translateY(-5px); 
+ }
+ .search-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 20px;
+  border: 1px solid #ddd;
+  border-radius: 100px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.search-bar:focus {
+  border-color: #c0432c;
+  box-shadow: 0 0 0 3px rgba(192,67,44,0.15);
+}
+  </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul class="logobar">
+           <li> <img src="ddlogo.png" alt="logo" class="logo"> </li>
+               <li><h4 style="font-size: 2rem;"><b>DAILY DELIGHTS</b></h4></li>
+              </ul>
+            <ul>
+              <li> <a href="C:\Users\pc\Desktop\HTML-Practice\DAILY DELIGHTS\index.html"> Home </a></li>
+              <li> <a href="C:\Users\pc\Desktop\HTML-Practice\DAILY DELIGHTS\cakes.html"> Cakes</a></li>
+              <li> <a href="C:\Users\pc\Desktop\HTML-Practice\DAILY DELIGHTS\contactus.html"> Contact us</a></li> 
+              <li> <a href="C:\Users\pc\Desktop\HTML-Practice\DAILY DELIGHTS\login.html"> Login\Sign</a></li> 
+            </ul> </div>
+        </nav>
+    </header>
+  <section>
+    <div class="search-wrap">
+      <input type="text" id="searchInput" class="search-bar" placeholder="Search for a cake...">
+    </div>
+  </section>
+     <!-- JAVA SCRIPT -->
+    <!-- <script>
+      const searchInput = document.getElementById('searchInput');
+const cakeCards = document.querySelectorAll('.cake-card');
+
+searchInput.addEventListener('input', function() {
+  const searchTerm = this.value.toLowerCase();
+
+  cakeCards.forEach(function(card) {
+    const cakeName = card.querySelector('.cake-name').textContent.toLowerCase();
+
+    if (cakeName.includes(searchTerm)) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}); -->
+      </script>
+</body>
+</html>

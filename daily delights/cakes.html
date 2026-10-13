@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cakes.css">
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        }
+        body {
+         background-image: url('cakes/blur.png'); */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        min-height: 100vh; */
+        
+     }
+        nav {
+          display: flex;
+         justify-content: space-around;
+         align-items: center;
+         height: 90px;
+         background-color: rgb(207, 85, 87);
+            color: rgb(255, 166, 166);
+}
+     nav ul{
+      display:flex ;
+      justify-content: center;
+      align-items: center;
+      /* padding:16 32px ; */
+     }
+     .logobar {
+      text-decoration: none;
+       display: flexbox;
+       justify-content: space-around;
+       align-items: center;
+       gap:30px;
+       transition: transform 0.2s ease, color 0.1s ease;
+     }
+     .logobar:hover{
+      color: white;
+     transform: scale(1.0);
+     }
+     nav ul li{
+        list-style: none;
+        margin:  23px;
+       }
+        .logo {
+        height: 40px;
+        width: auto;
+         object-fit: contain;
+         border-radius: 34px;
+         
+       }
+        
+     
+     nav ul li a {
+      text-decoration: none;
+       color:  rgb(255, 129, 145);
+       display: inline-block;
+       transition: transform 0.2s ease, color 0.1s ease;
+     }
+     nav ul li a:hover {
+     color: white;
+     transform: scale(1.1);
+     }
+     img:hover {
+      box-shadow: 0 8px 20px rgba(206, 180, 75, 0.501);
+       transform: translateY(-5px); */
+ } 
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul class="logobar">
+           <li> <img src="ddlogo.png" alt="logo" class="logo"> </li>
+               <li><h4 style="font-size:2rem;"><b>DAILY DELIGHTS</b></h4></a></li>
+              </ul>
+            <ul>
+              <li> <a href="C:\Users\pc\Desktop\HTML-Practice\daily delights\index.html"> Home </a></li>
+              <li> <a href="C:\Users\pc\Desktop\HTML-Practice\daily delights\cakes.html"> Cakes</a></li>
+              <li> <a href="C:\Users\pc\Desktop\HTML-Practice\daily delights\contactus.html"> Contact us</a></li> 
+              <li> <a href="C:\Users\pc\Desktop\HTML-Practice\daily delights\login.html"> Login\Sign</a></li> 
+            </ul> </div>
+        </nav>
+    </header>
+    <section class="search-bar">
+        <div class="filter-buttons">
+            <button  class="btn" data-filter="all">All</button>
+            <button class="btn" data-filter="cake">Cakes</button>
+            <button  class="btn" data-filter="jarcake">Jarcake</button>
+          <!-- <div class="search-wrap"> -->
+            <input type="text" id="searchInput" class="search-bar" placeholder="Search for a cake...">
+          </div>
+    </section>
+    <div class="products-grid">
+    <div class="cake-card" data-category ="cake">
+      <img src="C:\Users\pc\Desktop\HTML-Practice\daily delights\cakes\cc.png" alt="Chocolate Cake" class="cake-img">
+      <h3 class="cake-name">Chocolate Truffle Cake</h3>
+      <p class="cake-price">₹599</p>
+    </div>
+    <div class="cake-card" data-category="cake">
+        <img src="C:\Users\pc\Desktop\HTML-Practice\daily delights\cakes\pista.png" alt="Vanilla Cake" class="cake-img"> 
+        <h3 class="cake-name">Pistacho Cake</h3> 
+         <p class="cake-price">₹699</p> 
+     </div>
+     <div class="cake-card" data-category="jarcake">
+        <img src="C:\Users\pc\Desktop\HTML-Practice\daily delights\cakes\jar\bluejar.png"  class="cake-img">
+        <h3 class="cake-name">BlueBerry Jar Cake</h3>
+        <p class="cake-price">₹199</p>
+      </div>
+    <div class="cake-card" data-category="cake">
+      <img src="C:\Users\pc\Desktop\HTML-Practice\daily delights\cakes\blue.png" alt="Red Velvet Cake" class="cake-img">
+      <h3 class="cake-name">BLUE BERRY CAKE</h3>
+      <p class="cake-price">₹649</p>
+    </div>
+  
+    
+    <!-- best seller -->
+    <div class="cake-card" data-category="cake">
+        <div class="cake-img-wrap">
+        <img src="C:\Users\pc\Desktop\HTML-Practice\daily delights\cakes\bsc.png"  class="cake-img">
+        <span class="badge">Bestseller</span>
+     </div>
+      <h3 class="cake-name">Biscoff Cheese  Cake</h3>
+      <p class="cake-price">₹599</p>
+    </div>
+    <div class="cake-card" data-category="jarcake">
+        <img src="C:\Users\pc\Desktop\HTML-Practice\daily delights\cakes\jar\bisjar.png"  class="cake-img">
+        <h3 class="cake-name">Biscoff Jar Cake</h3>
+        <p class="cake-price">₹399</p>
+      </div>
+    <div class="cake-card" data-category="cake"> 
+      <img src="C:\Users\pc\Desktop\HTML-Practice\daily delights\cakes\rv.png" class="cake-img">
+      <h3 class="cake-name">Red Velvet Cake</h3>
+      <p class="cake-price">₹499</p>
+    </div>
+    <div class="cake-card" data-category="cake" >
+        <img src="C:\Users\pc\Desktop\HTML-Practice\daily delights\cakes\van.png"  class="cake-img">
+        <h3 class="cake-name">Classic Vanilla Cake</h3>
+        <p class="cake-price">₹499</p>
+      </div>
+      <div class="cake-card" data-category="jarcake">
+        <img src="C:\Users\pc\Desktop\HTML-Practice\daily delights\cakes\jar\magojar.png" class="cake-img">
+        <h3 class="cake-name">Mango Jar Cake</h3>
+        <p class="cake-price">₹199</p>
+      </div>
+    <div class="cake-card" data-category="cake">
+      <img src="C:\Users\pc\Desktop\HTML-Practice\daily delights\cakes\mango.png"  class="cake-img">
+      <h3 class="cake-name">Mango Moose Cake</h3>
+      <p class="cake-price">₹399</p>
+    </div>
+    <div class="cake-card" data-category="jarcake">
+        <img src="C:\Users\pc\Desktop\HTML-Practice\daily delights\cakes\jar\trijar.png" class="cake-img">
+        <h3 class="cake-name">Triramisu Jar Cake</h3>
+        <p class="cake-price">₹149</p>
+      </div>
+    <div class="cake-card" data-category="cake">
+        <img src="C:\Users\pc\Desktop\HTML-Practice\daily delights\cakes\dark.png"  class="cake-img">
+        <h3 class="cake-name">Dark Forest  Cake</h3>
+        <p class="cake-price">₹599</p>
+      </div>
+      <div class="cake-card" data-category="jarcake">
+        <img src="C:\Users\pc\Desktop\HTML-Practice\daily delights\cakes\jar\starjar.png"  class="cake-img">
+        <h3 class="cake-name">Strawberry Jar Cake</h3>
+        <p class="cake-price">₹299</p>
+      </div>
+      <div class="cake-card" data-category="cake">
+        <img src="C:\Users\pc\Desktop\HTML-Practice\daily delights\cakes\oreo.png"  class="cake-img">
+        <h3 class="cake-name">Oreo cookies and cream  Cake</h3>
+        <p class="cake-price">₹299</p>
+      </div>
+      <div class="cake-card" data-category="cake">
+        <img src="C:\Users\pc\Desktop\HTML-Practice\daily delights\cakes\tri.png"  class="cake-img">
+        <h3 class="cake-name">Triramisu  Cake</h3>
+        <p class="cake-price">₹599</p>
+      </div>
+    <!-- JAR CAKES -->
+   
+    <!-- best seller  -->
+    <div class="cake-card" data-category="jarcake">
+      <div class="cake-img-wrap">
+      <img src="C:\Users\pc\Desktop\HTML-Practice\daily delights\cakes\jar\nutujar.png"  class="cake-img">
+      <span class="badge">Bestseller</span>
+     </div>
+      <h3 class="cake-name">Nutulla Jar Cheese Cake</h3>
+      <p class="cake-price">₹179</p>
+    </div>
+    <div class="cake-card" data-category="cake">
+        <img src="C:\Users\pc\Desktop\HTML-Practice\daily delights\cakes\str.png"  class="cake-img">
+        <h3 class="cake-name">Strawberry Cake</h3>
+        <p class="cake-price">₹399</p>
+      </div>
+    
+    <div class="cake-card" data-category="jarcake">
+      <img src="C:\Users\pc\Desktop\HTML-Practice\daily delights\cakes\jar\pisjar.png"  class="cake-img">
+      <h3 class="cake-name">Pistachio Jar Cake</h3>
+      <p class="cake-price">₹299</p>
+    </div>
+    <div class="cake-card" data-category="cake">
+        <img src="C:\Users\pc\Desktop\HTML-Practice\daily delights\cakes\nutella.png"  class="cake-img">
+        <h3 class="cake-name">Nutulla  Cake</h3>
+        <p class="cake-price">₹239</p>
+      </div>
+    <div class="cake-card" data-category="jarcake">
+      <img src="C:\Users\pc\Desktop\HTML-Practice\daily delights\cakes\jar\ccfuge.png" class="cake-img">
+      <h3 class="cake-name">Chocolate Fudge Jar Cake</h3>
+      <p class="cake-price">₹149</p>
+    </div>
+     <div class="cake-card" data-category="jarcake">
+        <img src="C:\Users\pc\Desktop\HTML-Practice\daily delights\cakes\jar\redjar.png" class="cake-img">
+        <h3 class="cake-name">Red Velvet Jar Cake</h3>
+        <p class="cake-price">₹199</p>
+      </div>
+ </div>
+  <hr>
+  <footer style="margin:50pxS;">
+    <h6> order more</h6>
+  </footer>
+</body>
+<script src="cakes.js"></script>
+<script src="search.js"></script>
+</html>
